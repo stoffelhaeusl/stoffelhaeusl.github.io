@@ -1,0 +1,27 @@
+<header class="header">
+  <div class="branding">
+    <div class="blog-title">
+      <a href="{{ "/" | relative_url }}" title="{{ site.title | escape }}" rel="home">{{ site.title | escape }}</a>
+    </div>
+  </div>
+
+  {% assign default_paths = site.pages | map: "path" %}
+  {% assign page_paths = site.header_pages | default: default_paths %}
+
+  {% if page_paths %}
+    <nav class="menu">
+      <ul id="menu-hauptmenu" class="sf-menu sf-js-enabled">
+        {% for path in page_paths %}
+          {% assign nav_page = site.pages | where: "path", path | first %}
+          {% if nav_page.title %}
+            {% assign current_subdir = page.url | relative_url | downcase | split: '/' | first %}
+            {% assign subdir = nav_page.url | relative_url | downcase | split: '/' | first %}
+            <li{% if current_subdir == subdir %} class='current'{% endif %}>
+              <a class="page-link" href="{{ nav_page.url | relative_url }}">{{ nav_page.title | escape }}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </nav>
+  {% endif %}
+</header>
