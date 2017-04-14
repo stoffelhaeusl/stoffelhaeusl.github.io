@@ -14,9 +14,9 @@
         {% for path in page_paths %}
           {% assign nav_page = site.pages | where: "path", path | first %}
           {% if nav_page.title %}
-            {% assign current_subdir = page.url | relative_url | downcase | split: '/' | first %}
-            {% assign subdir = nav_page.url | relative_url | downcase | split: '/' | first %}
-            <li{% if current_subdir == subdir %} class='current'{% endif %}>
+            {% assign actual = page.url | relative_url | downcase | split: '/' %}
+            {% assign current = nav_page.url | relative_url | downcase | split: '/' %}
+            <li{% if current[1] == actual[1] %} class='current'{% endif %}>
               <a class="page-link" href="{{ nav_page.url | relative_url }}">{{ nav_page.title | escape }}</a>
             </li>
           {% endif %}
