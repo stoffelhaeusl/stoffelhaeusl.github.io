@@ -16,7 +16,7 @@ License URI: n/a
 
 
 @import url("http://fonts.googleapis.com/css?family=Bitter:400,700,400italic|Quattrocento:400,700&subset=latin,latin-ext");
-@import url("library/fonts/plakat-fraktur/font-face.css");
+@import url("{{ site.baseurl }}/fonts/plakat-fraktur/font-face.css");
 
 $blog-title-font: "plakatfrakturregular", "PlakatFraktur-Heavy", serif;
 $headline-font: 'Bitter', serif;
