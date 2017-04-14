@@ -457,7 +457,7 @@ header.header {
   color: $lightgrey;
 }
 
-article {
+article, section {
   @include hyphens;
 
   .entry-title {
@@ -477,6 +477,7 @@ article {
   figure.full {
     margin-top: 1em;
     margin-bottom: 1em;
+    width: 100%;
   }
 
   p {
@@ -535,8 +536,10 @@ footer p {
   font-size: 2.8em;
 }
 
-article p {
-  font-size: 1em;
+article, section {
+  p {
+    font-size: 1em;
+  }
 }
 
 .menu ul li {
@@ -622,7 +625,7 @@ html {
   padding: 2em 1.25em 1em;
 }
 
-article {
+article, section {
 
   .entry-title {
     font-size: 2em;
