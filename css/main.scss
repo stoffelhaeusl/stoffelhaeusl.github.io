@@ -348,8 +348,7 @@ header.header {
   @include box-shadow(0 1px 4px rgba(40,0,0,.4));
 }
 
-.wp-caption {
-
+figure {
   img {
     height: auto;
   }
@@ -383,7 +382,7 @@ header.header {
   }
 }
 
-.entry-content {
+.content {
   margin-bottom: 1em;
 
   @extend %clearfix;
@@ -644,7 +643,8 @@ article, section {
 
 .alignleft,
 .alignright {
-  max-width: 100%;
+  width: 20em;
+  max-width: 50%;
   margin-bottom: 1.25em;
 }
 
