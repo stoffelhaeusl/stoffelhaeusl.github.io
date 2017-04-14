@@ -233,7 +233,7 @@ html {
   -ms-text-size-adjust: 100%;
   height: 100%;
   background-color: #f22544;
-  background: $white url("karo.png") top center;
+  background: $white url("{{ site.baseurl }}/img/karo.png") top center;
   background-size: 174px;
   -webkit-tap-highlight-color: $webkit-tap-highlight-color;
 	background-attachment: fixed;
