@@ -5,6 +5,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 header_pages:
   - index.md
   - uebers-haus.md
+  - neuigkeiten.md
   - gallerie.md
   - standort.md
 

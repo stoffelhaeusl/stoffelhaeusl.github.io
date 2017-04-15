@@ -460,7 +460,7 @@ figure {
 article, section {
   @include hyphens;
 
-  .entry-title {
+  header h1 {
     margin-bottom: .25em;
     font-size: 1.5em;
 
