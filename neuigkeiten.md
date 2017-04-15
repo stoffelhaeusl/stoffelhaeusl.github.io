@@ -1,6 +1,6 @@
 ---
 title: Neuigkeiten
-permalink: /neuigkeiten
+permalink: /neuigkeiten/
 layout: blog
 ---
 <section class='page blog'>
