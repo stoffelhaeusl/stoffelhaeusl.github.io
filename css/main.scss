@@ -60,6 +60,10 @@ $webkit-tap-highlight-color: #ef485c;
 }
 
 
+* {
+  box-sizing: border-box;
+}
+
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block;
 }
@@ -195,7 +199,6 @@ button[disabled], input[disabled] {
 }
 
 input[type="checkbox"], input[type="radio"] {
-  box-sizing: border-box;
   padding: 0;
 }
 
@@ -396,7 +399,6 @@ figure {
     float: left;
     clear: both;
     padding: .2em;
-    box-sizing: border-box;
     max-width: 100%;
     @include border-radius(.0625em);
 
@@ -414,7 +416,6 @@ figure {
   label, input, textarea {
     float: left;
     clear: both;
-    box-sizing: border-box;
     width: 100%;
     -webkit-appearance: none;
     @include border-radius(0);
