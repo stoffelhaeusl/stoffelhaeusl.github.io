@@ -69,14 +69,15 @@ audio:not([controls]) {
 a {
   text-decoration: none;
   color: $link-color;
-}
 
-a:focus {
-  outline: thin dotted;
-}
+  &:focus {
+    outline: thin dotted;
+  }
 
-a:active, a:hover {
-  outline: 0;
+  &:active,
+  &:hover {
+    outline: 0;
+  }
 }
 
 h1 {
@@ -260,6 +261,14 @@ header.header {
     font-size: 2.5em;
     color: $black;
     text-decoration: none;
+
+    @include tablet {
+      font-size: 2.8em;
+    }
+
+    @include desktop {
+      font-size: 3.5em;
+    }
   }
 }
 
@@ -315,9 +324,89 @@ header.header {
         font-family: $headline-font;
         font-weight: 400;
       }
+
+      @include tablet {
+        width: 29%;
+        border: 0;
+        margin-bottom: .5em;
+
+        &:nth-child(2n-1) {
+          border-right: 0;
+          padding-right: 0;
+        }
+
+        &:nth-child(2n) {
+          padding-left: 0;
+        }
+
+        &:nth-child(3n-1) {
+          border-right: 1px solid $lightgrey;
+          border-left: 1px solid $lightgrey;
+          padding-right: 3.25%;
+          padding-left: 3.25%;
+        }
+
+        &:nth-child(3n-2) {
+          padding-right: 3.25%;
+        }
+
+        &:nth-child(3n) {
+          padding-left: 3.25%;
+        }
+
+        &:nth-last-child(3) {
+          margin-bottom: 0;
+        }
+      }
     }
 
     @extend %clearfix;
+  }
+
+
+  @include desktop {
+    float:left;
+    position:relative;
+    padding: .375em 0;
+
+    ul {
+      clear:left;
+      float:right;
+      list-style:none;
+      margin:0;
+      padding:0;
+      position:relative;
+      right:50%;
+      text-align:center;
+
+      li {
+        float:left;
+        position:relative;
+        left:50%;
+
+        width: auto;
+        margin-bottom: 0;
+
+        &:nth-child(3n-1) {
+          border: 0;
+        }
+
+        &:not(:last-child) {
+          border-right: 1px solid $lightgrey;
+          padding-right: .375em;
+        }
+
+        &:not(:first-child) {
+          padding-left: .375em;
+        }
+
+        a {
+          width: auto;
+          padding: .375em .75em;
+          @include border-radius(.1875em);
+        }
+      }
+    }
   }
 }
 
@@ -334,6 +423,14 @@ header.header {
   border: none;
   padding: 1.125em 3.125% .675em;
   @include box-shadow(0 1px 4px rgba(40,0,0,.4));
+
+  @include desktop {
+    width: auto;
+    max-width: 940px;
+    margin: 0 auto;
+    border: none;
+    padding: 2em 1.25em 1em;
+  }
 }
 
 figure {
@@ -354,17 +451,31 @@ figure {
 .alignleft {
   float: left;
   margin-right: 1em;
+
+  @include desktop {
+    margin-right: 1.25em;
+  }
 }
 
 .alignright {
   float: right;
   margin-left: 1em;
+
+  @include desktop {
+    margin-left: 1.25em;
+  }
 }
 
 .alignleft,
 .alignright {
   max-width: 50%;
   margin-bottom: 1em;
+
+  @include desktop {
+    width: 20em;
+    max-width: 50%;
+    margin-bottom: 1.25em;
+  }
 
   img {
     max-width: 100%;
@@ -432,6 +543,10 @@ article, section {
     margin-bottom: .25em;
     font-size: 1.5em;
 
+    @include desktop {
+      font-size: 2em;
+    }
+
     a {
       text-decoration: none;
       color: inherit;
@@ -454,6 +569,10 @@ article, section {
     line-height: 1.5em;
     margin-top: 1em;
     margin-bottom: 1em;
+
+    @include desktop {
+      font-size: 1.25em;
+    }
 
     &:first-of-type:first-letter {
       color: $black;
@@ -498,145 +617,3 @@ footer p {
     color: $lightgrey;
   }
 }
-
-
-@media screen and (min-width: 521px) {
-
-
-.blog-title a {
-  font-size: 2.8em;
-}
-
-.menu ul li {
-  width: 29%;
-  border: 0;
-  margin-bottom: .5em;
-
-  &:nth-child(2n-1) {
-    border-right: 0;
-    padding-right: 0;
-  }
-
-  &:nth-child(2n) {
-    padding-left: 0;
-  }
-
-  &:nth-child(3n-1) {
-    border-right: 1px solid $lightgrey;
-    border-left: 1px solid $lightgrey;
-    padding-right: 3.25%;
-    padding-left: 3.25%;
-  }
-
-  &:nth-child(3n-2) {
-    padding-right: 3.25%;
-  }
-
-  &:nth-child(3n) {
-    padding-left: 3.25%;
-  }
-
-  &:nth-last-child(3) {
-    margin-bottom: 0;
-  }
-}
-
-} /* (min-width: 521px) */
-
-
-@media screen and (min-width: 699px) {
-
-html {
-  background-size: auto;
-}
-
-.blog-title a {
-  font-size: 3.5em;
-}
-
-.menu {
-  padding: .375em 0;
-
-  ul li {
-    width: auto;
-    margin-bottom: 0;
-
-    &:nth-child(3n-1) {
-      border: 0;
-    }
-
-    &:not(:last-child) {
-      border-right: 1px solid $lightgrey;
-      padding-right: .375em;
-    }
-
-    &:not(:first-child) {
-      padding-left: .375em;
-    }
-
-    a {
-      width: auto;
-      padding: .375em .75em;
-      @include border-radius(.1875em);
-    }
-  }
-}
-
-.container {
-  width: auto;
-  max-width: 940px;
-  margin: 0 auto;
-  border: none;
-  padding: 2em 1.25em 1em;
-}
-
-article, section {
-
-  .entry-title {
-    font-size: 2em;
-  }
-
-  p {
-    font-size: 1.25em;
-  }
-}
-.alignleft {
-  margin-right: 1.25em;
-}
-
-.alignright {
-  margin-left: 1.25em;
-}
-
-.alignleft,
-.alignright {
-  width: 20em;
-  max-width: 50%;
-  margin-bottom: 1.25em;
-}
-
-.menu {
-   float:left;
-   position:relative;
-
-   ul {
-     clear:left;
-     float:right;
-     list-style:none;
-     margin:0;
-     padding:0;
-     position:relative;
-     right:50%;
-     text-align:center;
-
-     li {
-       float:left;
-       position:relative;
-       left:50%;
-    }
-  }
-}
-
-
-} /* (min-width: 699px) */
-
