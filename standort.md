@@ -4,5 +4,10 @@ title: Standort
 permalink: /standort
 ---
 <figure class="full">
-  <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=de&amp;geocode=&amp;q=Sankt+Gertraudi+24,+6235+Reith,+%C3%96sterreich&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=56.200193,86.835938&amp;ie=UTF8&amp;hq=&amp;hnear=Sankt+Gertraudi+24,+6235+Reith,+Kufstein,+Tirol,+%C3%96sterreich&amp;t=h&amp;ll=47.411578,11.8504986&amp;spn=0.02091,0.053301&amp;z=16&amp;iwloc=near&amp;output=embed"></iframe>
+  <div class="aspect-ratio-16-9">
+    <iframe scrolling="no" src="http://www.openstreetmap.org/export/embed.html?bbox=11.84577763080597%2C47.40968083015392%2C11.851571202278139%2C47.412893617056405&amp;layer=mapnik&amp;marker=47.41128724810418%2C11.848674416542053"></iframe>
+  </div>
+  <figcaption>
+    <a href="http://www.openstreetmap.org/?mlat=47.41129&amp;mlon=11.84867#map=18/47.41129/11.84867">Größere Karte anzeigen</a>
+  </figcaption>
 </figure>
