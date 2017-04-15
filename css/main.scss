@@ -16,6 +16,7 @@ License URI: n/a
 
 
 @import 'mixins';
+@import 'gallery';
 
 @import url("http://fonts.googleapis.com/css?family=Bitter:400,700,400italic|Quattrocento:400,700&subset=latin,latin-ext");
 @import url("{{ site.baseurl }}/fonts/plakat-fraktur/font-face.css");
@@ -639,28 +640,3 @@ article, section {
 
 } /* (min-width: 699px) */
 
-.gallery {
-  .gallery-item {
-    display: block;
-    float: left;
-    width: 31%;
-    text-align: left;
-    margin: 0;
-
-    &:not(:nth-child(1)):not(:nth-child(2)):not(:nth-child(3)) {
-      margin-top: 3.5%;
-    }
-
-    &:nth-of-type(3n-1) {
-      margin-left: 3.5%;
-      margin-right: 3.5%
-    }
-
-    .gallery-icon {
-      display: block;
-      padding-top: 100%;
-      background-position: center;
-      background-size: cover;
-    }
-  }
-}
