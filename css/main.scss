@@ -290,16 +290,16 @@ header.header {
     li {
       list-style: none;
       float:left;
-      width: 46%;
+      width: 50%;
       margin-bottom: .5em;
 
       &:nth-child(2n-1) {
         border-right: 1px solid $lightgrey;
-        padding-right: 4%;
+        padding-right: 1em;
       }
 
       &:nth-child(2n) {
-        padding-left: 4%;
+        padding-left: 1em;
       }
 
       &:last-child,
@@ -326,7 +326,7 @@ header.header {
       }
 
       @include tablet {
-        width: 29%;
+        width: 33.33333%;
         border: 0;
         margin-bottom: .5em;
 
@@ -342,16 +342,16 @@ header.header {
         &:nth-child(3n-1) {
           border-right: 1px solid $lightgrey;
           border-left: 1px solid $lightgrey;
-          padding-right: 3.25%;
-          padding-left: 3.25%;
+          padding-right: 1em;
+          padding-left: 1em;
         }
 
         &:nth-child(3n-2) {
-          padding-right: 3.25%;
+          padding-right: 1em;
         }
 
         &:nth-child(3n) {
-          padding-left: 3.25%;
+          padding-left: 1em;
         }
 
         &:nth-last-child(3) {
