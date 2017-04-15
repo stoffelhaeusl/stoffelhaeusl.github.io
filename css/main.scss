@@ -482,7 +482,8 @@ article, section {
 
   p {
     color: $darkgrey;
-    font-size: .875em;
+    font-size: 1em;
+    line-height: 1.5em;
     margin-top: 1em;
     margin-bottom: 1em;
 
@@ -536,12 +537,6 @@ footer p {
 
 .blog-title a {
   font-size: 2.8em;
-}
-
-article, section {
-  p {
-    font-size: 1em;
-  }
 }
 
 .menu ul li {
@@ -634,7 +629,7 @@ article, section {
   }
 
   p {
-    font-size: 1.0625em;
+    font-size: 1.25em;
   }
 }
 .alignleft {
