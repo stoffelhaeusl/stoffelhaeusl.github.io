@@ -609,10 +609,11 @@ footer p {
   padding-top: .5em;
   text-align: center;
   color: $footer-text;
-  font-size: .8125em;
-  min-width: 11em;
-  width: 50%;
   border-top: 1px solid $lightgrey;
+
+  @include tablet {
+    width: 50%;
+  }
 
   .sep {
     color: $lightgrey;
