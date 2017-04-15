@@ -3,7 +3,7 @@ layout: page
 title: Griaß di im Stoffelhäusl
 menu_title: Startseite
 ---
-<img class="alignright" src="{{ site.baseurl }}/img/startseite.jpg" alt="" width="320">
+<img class="alignright" src="{{ site.baseurl }}/img/startseite.jpg" alt="">
 
 Dort wo sich noch vor gut 200 Jah­ren die Gren­zen von Ti­rol und Salz­burg am Geyer­bach tra­fen, zwi­schen den Schlös­sern Mat­zen, Neu­mat­zen, Licht­wehr und der Burg­ruine Kropfs­berg, unmit­tel­bar an der Diözes­an­grenze von Salz­burg und Inns­bruck, be­findet sich das über 500 Jah­re alte Stoffel­häusl. Knapp 45 Jah­re un­bewohnt, wurde es in den Jah­ren 2010/2011 originalgetreu re­no­viert und restauriert und zu neu­em Le­ben erweckt.
 
