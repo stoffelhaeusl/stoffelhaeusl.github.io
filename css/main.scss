@@ -15,6 +15,8 @@ License URI: n/a
 */
 
 
+@import 'mixins';
+
 @import url("http://fonts.googleapis.com/css?family=Bitter:400,700,400italic|Quattrocento:400,700&subset=latin,latin-ext");
 @import url("{{ site.baseurl }}/fonts/plakat-fraktur/font-face.css");
 
@@ -31,24 +33,6 @@ $link-color: #0274f5;
 $footer-text: darken($lightgrey, 35%);
 
 $webkit-tap-highlight-color: #ef485c;
-
-@mixin border-radius($a) {
-  -webkit-border-radius: $a;
-  -moz-border-radius: $a;
-  border-radius: $a;
-}
-
-@mixin box-shadow($a) {
-  -webkit-box-shadow: $a;
-  -moz-box-shadow: $a;
-  box-shadow: $a;
-}
-
-@mixin hyphens {
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  hyphens: auto;
-}
 
 
 %clearfix {
