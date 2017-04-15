@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Griaß di im Stoffelhäusl
+menu_title: Startseite
 ---
 <img class="alignright" src="{{ site.baseurl }}/img/startseite.jpg" alt="" width="320">
 

@@ -13,11 +13,15 @@
       <ul id="menu-hauptmenu" class="sf-menu sf-js-enabled">
         {% for path in page_paths %}
           {% assign nav_page = site.pages | where: "path", path | first %}
-          {% if nav_page.title %}
+          {% assign title = nav_page.title %}
+          {% if nav_page.menu_title %}
+          {% assign title = nav_page.menu_title %}
+          {% endif %}
+          {% if title %}
             {% assign actual = page.url | relative_url | downcase | split: '/' %}
             {% assign current = nav_page.url | relative_url | downcase | split: '/' %}
             <li{% if current[1] == actual[1] %} class='current'{% endif %}>
-              <a class="page-link" href="{{ nav_page.url | relative_url }}">{{ nav_page.title | escape }}</a>
+              <a class="page-link" href="{{ nav_page.url | relative_url }}">{{ title | escape }}</a>
             </li>
           {% endif %}
         {% endfor %}
