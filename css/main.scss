@@ -249,27 +249,24 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
-header.header {
-  @extend %clearfix;
-}
-
-.blog-title {
+.branding {
   text-align: center;
+  font-family: $blog-title-font;
+  font-weight: 400;
+  font-size: 2.5em;
+  color: $black;
+
+  @include tablet {
+    font-size: 3em;
+  }
+
+  @include desktop {
+    font-size: 4em;
+  }
 
   a {
-    font-family: $blog-title-font;
-    font-weight: 400;
-    font-size: 2.5em;
-    color: $black;
+    color: inherit;
     text-decoration: none;
-
-    @include tablet {
-      font-size: 2.8em;
-    }
-
-    @include desktop {
-      font-size: 3.5em;
-    }
   }
 }
 
@@ -278,11 +275,12 @@ header.header {
 }
 
 .menu {
-  margin-top: .8125em;
+  margin-top: 1em;
   border-top: 1px solid $lightgrey;
   border-bottom: 1px solid $lightgrey;
   width: 100%;
   padding: .5em 0;
+  @extend %clearfix;
 
   ul {
     margin: 0;
@@ -366,8 +364,6 @@ header.header {
 
 
   @include desktop {
-    float:left;
-    position:relative;
     padding: .375em 0;
 
     ul {
