@@ -481,6 +481,7 @@ figure {
 }
 
 .content {
+  margin-top: 1.5em;
   margin-bottom: 1em;
 
   @extend %clearfix;
@@ -537,17 +538,31 @@ figure {
 article, section {
   @include hyphens;
 
-  header h1 {
-    margin-bottom: .25em;
-    font-size: 1.5em;
+  header {
+    h1 {
+      font-size: 1.5em;
 
-    @include desktop {
-      font-size: 2em;
+      @include desktop {
+        font-size: 2em;
+      }
     }
 
-    a {
-      text-decoration: none;
-      color: inherit;
+    h2 {
+      font-size: 1em;
+
+      @include desktop {
+        font-size: 1.5em;
+      }
+    }
+
+    h1, h2 {
+      margin-top: 0;
+      margin-bottom: 0;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
     }
   }
 
