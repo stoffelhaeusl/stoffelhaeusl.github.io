@@ -5,7 +5,7 @@ permalink: /uebers-haus
 ---
 <figure class="alignleft">
   <a href="{{ site.baseurl }}/img/uebers_haus.jpg">
-    <img title="Das Stof­fel­häusl auf ei­ner Lithographie um 1840" src="{{ site.baseurl }}/img/uebers_haus.jpg" alt="">
+    <img title="Das Stof­fel­häusl auf ei­ner Lithographie um 1840" src="{{ site.baseurl }}/assets/uebers_haus.jpg" alt="">
   </a>
   <figcaption class="wp-caption-text">Das Stof­fel­häusl auf ei­ner Lithographie um 1840</figcaption>
 </figure>
