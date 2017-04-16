@@ -140,6 +140,7 @@ sub {
 img {
   border: 0;
   height: auto;
+  max-width: 100%;
 }
 
 svg:not(:root) {
@@ -441,9 +442,9 @@ figure {
 
   figcaption {
     margin-top: .5em;
-    font-size: .8125em;
     padding: .5em .75em;
     background: $lightgrey;
+    line-height: 1.5em;
     @include hyphens;
   }
 }
@@ -574,10 +575,6 @@ article, section {
     @include desktop {
       font-size: 1.25em;
     }
-
-    &:first-of-type:first-letter {
-      color: $black;
-    }
   }
 
   &:not(:last-of-type) {
@@ -618,4 +615,8 @@ footer p {
   .sep {
     color: $lightgrey;
   }
+}
+
+.article-content {
+  @extend %clearfix;
 }
