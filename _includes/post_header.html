@@ -1,7 +1,9 @@
 <header>
-  <h1><a href='{{ include.post.url | prepend: site.baseurl }}'>{{ include.post.title }}</a></h1>
-  {% if include.post.subtitle %}
-    <h2>{{ include.post.subtitle }}</h2>
-  {% endif %}
+  <hgroup>
+    <h1><a href='{{ include.post.url | prepend: site.baseurl }}'>{{ include.post.title }}</a></h1>
+    {% if include.post.subtitle %}
+      <h2>{{ include.post.subtitle }}</h2>
+    {% endif %}
+  </hgroup>
 </header>
 

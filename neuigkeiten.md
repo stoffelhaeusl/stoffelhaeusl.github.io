@@ -7,16 +7,13 @@ layout: default
   <article class="content">
     {% include post_header.html post=post %}
     {% if post.content contains '<!--more-->' %}
-      <div class="article-content">
-        {{ post.content | split: '<!--more-->' | first }}
-      </div>
+      {% assign content = post.content | split: '<!--more-->' | first%}
+      {% include post_content.html content=content %}
       <footer>
         <a href='{{ post.url | prepend: site.baseurl }}'>Weiterlesen … </a>
       </footer>
     {% else %}
-      <div class="article-content">
-        {{ post.content }}
-      </div>
+      {% include post_content.html content=post.content %}
     {% endif %}
   </article>
 {% endfor %}

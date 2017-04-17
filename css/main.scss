@@ -247,6 +247,17 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: $headline-font;
   font-weight: 700;
+  line-height: 1.375em;
+}
+
+hgroup {
+  margin-top: 1em;
+  margin-bottom: 1em;
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 .branding {
@@ -441,7 +452,6 @@ figure {
     padding: .5em .75em;
     background: $lightgrey;
     line-height: 1.5em;
-    @include hyphens;
   }
 }
 
@@ -535,8 +545,17 @@ figure {
   color: $lightgrey;
 }
 
-article, section {
-  @include hyphens;
+.content {
+  font-size: 1em;
+  line-height: 1.5em;
+
+  h1 {
+    font-size: 2em;
+  }
+
+  @include desktop {
+    font-size: 1.25em;
+  }
 
   header {
     h1 {
@@ -556,9 +575,6 @@ article, section {
     }
 
     h1, h2 {
-      margin-top: 0;
-      margin-bottom: 0;
-
       a {
         text-decoration: none;
         color: inherit;
@@ -566,32 +582,37 @@ article, section {
     }
   }
 
+  &:not(:last-of-type) {
+    border-bottom: 1px solid $lightgrey;
+    padding-bottom: 2em;
+  }
+}
+
+
+.article-content, .page-content {
+  @extend %clearfix;
+}
+
+article, section {
+  @include hyphens;
+
   .entry-meta {
     font-size: .75em;
   }
 
   .full {
-    margin-top: 1em;
-    margin-bottom: 1em;
     width: 100%;
   }
 
   p {
     color: $darkgrey;
-    font-size: 1em;
-    line-height: 1.5em;
+  }
+
+  .full, p, table {
     margin-top: 1em;
     margin-bottom: 1em;
-
-    @include desktop {
-      font-size: 1.25em;
-    }
   }
 
-  &:not(:last-of-type) {
-    border-bottom: 1px solid $lightgrey;
-    padding-bottom: 2em;
-  }
 }
 
 
@@ -626,8 +647,4 @@ footer p {
   .sep {
     color: $lightgrey;
   }
-}
-
-.article-content {
-  @extend %clearfix;
 }
