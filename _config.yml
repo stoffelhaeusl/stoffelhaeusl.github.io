@@ -1,6 +1,6 @@
 title: Das Stoffelhäusl
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: ""
+url: "http://stoffelhaeusl.info"
 permalink: /neuigkeiten/:year/:month/:title
 
 header_pages:
