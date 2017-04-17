@@ -4,4 +4,4 @@ title: Kontakt
 permalink: /kontakt
 ---
 
-[stoffelhaeusl@gmail.com](mailto:stoffelhaeusl@gmail.com)
+Email: [stoffelhaeusl@gmail.com](mailto:stoffelhaeusl@gmail.com)
