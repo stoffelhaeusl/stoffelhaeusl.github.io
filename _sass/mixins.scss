@@ -27,3 +27,11 @@
   -moz-hyphens: auto;
   hyphens: auto;
 }
+
+%clearfix {
+  &:after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+}
