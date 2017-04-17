@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Gallerie
-permalink: /gallerie
+title: Galerie
+permalink: /galerie
 ---
 <div class="gallery">
   {% for image in site.data.gallery %}
