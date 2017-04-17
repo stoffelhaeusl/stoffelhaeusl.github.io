@@ -1,10 +1,25 @@
-.gallery {
-  .gallery-item {
-    display: block;
+.gallery-item {
+  display: block;
+
+  @include tablet {
     float: left;
-    width: 31%;
-    text-align: left;
     margin: 0;
+  }
+
+  @include tablet-only {
+    width: 48%;
+
+    &:not(:nth-child(1)):not(:nth-child(2)) {
+      margin-top: 4%;
+    }
+
+    &:nth-of-type(2n) {
+      margin-left: 4%;
+    }
+  }
+
+  @include desktop {
+    width: 31%;
 
     &:not(:nth-child(1)):not(:nth-child(2)):not(:nth-child(3)) {
       margin-top: 3.5%;
@@ -14,12 +29,12 @@
       margin-left: 3.5%;
       margin-right: 3.5%
     }
-
-    .gallery-icon {
-      display: block;
-      padding-top: 100%;
-      background-position: center;
-      background-size: cover;
-    }
   }
+}
+
+.gallery-icon {
+  display: block;
+  padding-top: 100%;
+  background-position: center;
+  background-size: cover;
 }
