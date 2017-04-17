@@ -22,6 +22,7 @@ $webkit-tap-highlight-color: #ef485c;
 @import 'mixins';
 @import 'gallery';
 @import 'tables';
+@import 'footer';
 
 * {
   box-sizing: border-box;
@@ -609,21 +610,5 @@ article, section {
     width: 100%;
     height: 100%;
     border: none;
-  }
-}
-
-footer p {
-  margin: 1.5em auto 1em;
-  padding-top: .5em;
-  text-align: center;
-  color: $footer-text;
-  border-top: 1px solid $lightgrey;
-
-  @include tablet {
-    width: 50%;
-  }
-
-  .sep {
-    color: $lightgrey;
   }
 }
