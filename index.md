@@ -11,6 +11,6 @@ Auf his­tori­schem Bo­den ist es heu­te als ge­schichtsträchtiges Ver­mä
 
 <figure class="full">
   <div class="aspect-ratio-16-9">
-    <iframe src="http://player.vimeo.com/video/29436147?byline=0&amp;portrait=0&amp;color=ffffff" width="320" height="240"></iframe>
+    <iframe src="//player.vimeo.com/video/29436147?byline=0&amp;portrait=0&amp;color=ffffff" width="320" height="240"></iframe>
   </div>
 </figure>
