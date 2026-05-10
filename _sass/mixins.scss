@@ -39,7 +39,7 @@ $desktop: 721px;
 
 %clearfix {
   &:after {
-    content: "";
+    content: '';
     clear: both;
     display: block;
   }

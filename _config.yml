@@ -15,7 +15,7 @@ header_pages:
 markdown: kramdown
 sass:
   style: compressed
-gems:
+plugins:
   - jekyll-feed
 exclude:
   - .gitignore

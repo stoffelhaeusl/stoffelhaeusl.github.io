@@ -1,9 +1,11 @@
+$border-color: magenta !default;
+
 table {
   width: 100%;
 }
 
 td {
-  border: 1px solid $lightgrey;
-  padding: .5em;
+  border: 1px solid $border-color;
+  padding: 0.5em;
   vertical-align: top;
 }

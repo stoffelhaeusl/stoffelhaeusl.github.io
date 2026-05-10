@@ -1,38 +1,58 @@
 ---
 ---
+
 @charset "utf-8";
 
-@import url("//fonts.googleapis.com/css?family=Bitter:400,400i,700|Quattrocento:400,700&subset=latin-ext");
-@import url("{{ site.baseurl }}/fonts/plakat-fraktur/font-face.css");
+@use 'sass:color';
 
-$blog-title-font: "plakatfrakturregular", "PlakatFraktur-Heavy", serif;
+$blog-title-font: 'plakatfrakturregular', 'PlakatFraktur-Heavy', serif;
 $headline-font: 'Bitter', serif;
 $text-font: 'Quattrocento', serif;
 
 $black: #000;
-$darkgrey: lighten($black, 10%);
+$darkgrey: color.adjust($black, $lightness: 10%);
 $white: #fff;
-$lightgrey: darken($white, 8%);
+$lightgrey: color.adjust($white, $lightness: -8%);
 
 $link-color: #0274f5;
-$footer-text: darken($lightgrey, 35%);
+$footer-text: color.adjust($lightgrey, $lightness: -35%);
 
 $webkit-tap-highlight-color: #ef485c;
 
-@import 'mixins';
-@import 'gallery';
-@import 'tables';
-@import 'footer';
+@use 'mixins' as *;
+@use 'gallery';
+@use 'tables' with (
+  $border-color: $lightgrey
+);
+@use 'footer' with (
+  $text-color: $footer-text,
+  $border-color: $lightgrey
+);
+
+@import url('//fonts.googleapis.com/css?family=Bitter:400,400i,700|Quattrocento:400,700&subset=latin-ext');
+@import url('{{ site.baseurl }}/fonts/plakat-fraktur/font-face.css');
 
 * {
   box-sizing: border-box;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
   display: block;
 }
 
-audio, canvas, video {
+audio,
+canvas,
+video {
   display: inline-block;
 }
 
@@ -61,7 +81,7 @@ a {
 
 h1 {
   font-size: 2em;
-  margin-top: .75em;
+  margin-top: 0.75em;
 }
 
 abbr[title] {
@@ -69,7 +89,8 @@ abbr[title] {
   cursor: help;
 }
 
-b, strong {
+b,
+strong {
   font-weight: bold;
 }
 
@@ -82,7 +103,10 @@ mark {
   color: $black;
 }
 
-code, kbd, pre, samp {
+code,
+kbd,
+pre,
+samp {
   font-family: monospace, serif;
   font-size: 1em;
 }
@@ -94,14 +118,15 @@ pre {
 }
 
 q {
-  quotes: "\201E" "\201C" "\201A" "\2018";
+  quotes: '\201E' '\201C' '\201A' '\2018';
 }
 
 small {
   font-size: 80%;
 }
 
-sub, sup {
+sub,
+sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
@@ -141,41 +166,51 @@ legend {
   padding: 0;
 }
 
-button, input, select, textarea {
+button,
+input,
+select,
+textarea {
   font-family: inherit;
   font-size: 100%;
   margin: 0;
 }
 
-button, input {
+button,
+input {
   line-height: normal;
 }
 
-button, html input[type="button"], input[type="reset"], input[type="submit"] {
+button,
+html input[type='button'],
+input[type='reset'],
+input[type='submit'] {
   -webkit-appearance: none;
   cursor: pointer;
   background: $link-color;
   color: $white;
   border: 0;
-  padding: .25em .5em;
+  padding: 0.25em 0.5em;
 }
 
-button[disabled], input[disabled] {
+button[disabled],
+input[disabled] {
   cursor: default;
 }
 
-input[type="checkbox"], input[type="radio"] {
+input[type='checkbox'],
+input[type='radio'] {
   padding: 0;
 }
 
-input[type="search"] {
+input[type='search'] {
   -webkit-appearance: textfield;
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
 
-input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -195,16 +230,15 @@ table {
   border-spacing: 0;
 }
 
-
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   height: 100%;
   background-color: #f22544;
-  background: $white url("{{ site.baseurl }}/img/karo.png") top center;
+  background: $white url('{{ site.baseurl }}/img/karo.png') top center;
   -webkit-tap-highlight-color: $webkit-tap-highlight-color;
-	background-attachment: fixed;
+  background-attachment: fixed;
 }
 
 body {
@@ -212,18 +246,49 @@ body {
   min-height: 100%;
   font-family: $text-font;
   font-weight: 400;
-  background: rgba(255,255,255,.25);
-  background: -moz-linear-gradient(top, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.3) 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.05)), color-stop(100%,rgba(255,255,255,0.3)));
-  background: -webkit-linear-gradient(top, rgba(255,255,255,0.05) 0%,rgba(255,255,255,0.3) 100%);
-  background: -o-linear-gradient(top, rgba(255,255,255,0.05) 0%,rgba(255,255,255,0.3) 100%);
-  background: -ms-linear-gradient(top, rgba(255,255,255,0.05) 0%,rgba(255,255,255,0.3) 100%);
-  background: linear-gradient(to bottom, rgba(255,255,255,0.05) 0%,rgba(255,255,255,0.3) 100%);
+  background: rgba(255, 255, 255, 0.25);
+  background: -moz-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, rgba(255, 255, 255, 0.05)),
+    color-stop(100%, rgba(255, 255, 255, 0.3))
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  background: -o-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  background: -ms-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01ffffff', endColorstr='#30ffffff',GradientType=0 );
   background-attachment: fixed;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: $headline-font;
   font-weight: 700;
   line-height: 1.375em;
@@ -233,7 +298,12 @@ hgroup {
   margin-top: 1em;
   margin-bottom: 1em;
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     margin-top: 0;
     margin-bottom: 0;
   }
@@ -269,7 +339,7 @@ hgroup {
   border-top: 1px solid $lightgrey;
   border-bottom: 1px solid $lightgrey;
   width: 100%;
-  padding: .5em 0;
+  padding: 0.5em 0;
   @extend %clearfix;
 
   ul {
@@ -278,9 +348,9 @@ hgroup {
 
     li {
       list-style: none;
-      float:left;
+      float: left;
       width: 50%;
-      margin-bottom: .5em;
+      margin-bottom: 0.5em;
 
       &:nth-child(2n-1) {
         border-right: 1px solid $lightgrey;
@@ -296,8 +366,8 @@ hgroup {
         margin-bottom: 0;
       }
 
-
-      a:hover, &.current a {
+      a:hover,
+      &.current a {
         background: #f2f2f2;
       }
 
@@ -305,9 +375,9 @@ hgroup {
         width: 100%;
         text-decoration: none;
         color: #222;
-        padding: .4375em 0;
+        padding: 0.4375em 0;
         font-size: 1em;
-        @include border-radius(.1875em);
+        @include border-radius(0.1875em);
         display: block;
         text-align: center;
         font-family: $headline-font;
@@ -317,7 +387,7 @@ hgroup {
       @include tablet {
         width: 33.33333%;
         border: 0;
-        margin-bottom: .5em;
+        margin-bottom: 0.5em;
 
         &:nth-child(2n-1) {
           border-right: 0;
@@ -352,24 +422,23 @@ hgroup {
     @extend %clearfix;
   }
 
-
   @include desktop {
-    padding: .375em 0;
+    padding: 0.375em 0;
 
     ul {
-      clear:left;
-      float:right;
-      list-style:none;
-      margin:0;
-      padding:0;
-      position:relative;
-      right:50%;
-      text-align:center;
+      clear: left;
+      float: right;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      right: 50%;
+      text-align: center;
 
       li {
-        float:left;
-        position:relative;
-        left:50%;
+        float: left;
+        position: relative;
+        left: 50%;
 
         width: auto;
         margin-bottom: 0;
@@ -380,24 +449,25 @@ hgroup {
 
         &:not(:last-child) {
           border-right: 1px solid $lightgrey;
-          padding-right: .375em;
+          padding-right: 0.375em;
         }
 
         &:not(:first-child) {
-          padding-left: .375em;
+          padding-left: 0.375em;
         }
 
         a {
           width: auto;
-          padding: .375em .75em;
-          @include border-radius(.1875em);
+          padding: 0.375em 0.75em;
+          @include border-radius(0.1875em);
         }
       }
     }
   }
 }
 
-.nav-above, .nav-below {
+.nav-above,
+.nav-below {
   text-align: center;
   margin-top: 1em;
 }
@@ -408,8 +478,8 @@ hgroup {
   margin: 0 auto;
   min-height: 100%;
   border: none;
-  padding: 1.125em 3.125% .675em;
-  @include box-shadow(0 1px 4px rgba(40,0,0,.4));
+  padding: 1.125em 3.125% 0.675em;
+  @include box-shadow(0 1px 4px rgba(40, 0, 0, 0.4));
 
   @include desktop {
     width: auto;
@@ -427,8 +497,8 @@ figure {
   }
 
   figcaption {
-    margin-top: .5em;
-    padding: .5em .75em;
+    margin-top: 0.5em;
+    padding: 0.5em 0.75em;
     background: $lightgrey;
     line-height: 1.5em;
   }
@@ -460,7 +530,8 @@ figure {
 .alignright {
   margin-bottom: 1em;
 
-  &, img {
+  &,
+  img {
     max-width: 100%;
   }
 
@@ -477,16 +548,15 @@ figure {
 }
 
 .contact-form {
-
   > div {
     float: left;
     clear: both;
-    padding: .2em;
+    padding: 0.2em;
     max-width: 100%;
-    @include border-radius(.0625em);
+    @include border-radius(0.0625em);
 
     &:not(:last-child) {
-      margin-bottom: .8em;
+      margin-bottom: 0.8em;
       background: $lightgrey;
     }
   }
@@ -496,7 +566,9 @@ figure {
     background: none;
   }
 
-  label, input, textarea {
+  label,
+  input,
+  textarea {
     float: left;
     clear: both;
     width: 100%;
@@ -505,14 +577,15 @@ figure {
   }
 
   label {
-    padding: .15em 0;
+    padding: 0.15em 0;
   }
 
   .textarea {
     width: 100%;
   }
 
-  input:not([type="submit"]), textarea {
+  input:not([type='submit']),
+  textarea {
     background: $white;
     border: none;
   }
@@ -553,7 +626,8 @@ figure {
       }
     }
 
-    h1, h2 {
+    h1,
+    h2 {
       a {
         text-decoration: none;
         color: inherit;
@@ -567,16 +641,17 @@ figure {
   }
 }
 
-
-.article-content, .page-content {
+.article-content,
+.page-content {
   @extend %clearfix;
 }
 
-article, section {
+article,
+section {
   @include hyphens;
 
   .entry-meta {
-    font-size: .75em;
+    font-size: 0.75em;
   }
 
   .full {
@@ -588,22 +663,24 @@ article, section {
     color: $darkgrey;
   }
 
-  .full, p, table {
+  .full,
+  p,
+  table {
     margin-top: 1em;
     margin-bottom: 1em;
   }
-
 }
-
 
 .aspect-ratio-16-9 {
   width: 100%;
   position: relative;
-  padding-bottom: 100% * (1 / (16 / 9));
+  padding-bottom: 100% * calc(1 / (16 / 9));
   height: 0;
   overflow: hidden;
 
-  iframe, object, embed {
+  iframe,
+  object,
+  embed {
     position: absolute;
     top: 0;
     left: 0;
