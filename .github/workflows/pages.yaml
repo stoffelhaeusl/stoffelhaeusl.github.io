@@ -1,3 +1,5 @@
+name: pages
+
 on:
   push:
     branches:
