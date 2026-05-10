@@ -3,11 +3,11 @@ layout: page
 title: Griaß di im Stoffelhäusl
 menu_title: Startseite
 ---
-<img class="alignright" src="{{ site.baseurl }}/assets/startseite.jpg" alt="">
+<img class="alignright" src="/assets/startseite.jpg" alt="">
 
-Dort wo sich noch vor gut 200 Jah­ren die Gren­zen von Ti­rol und Salz­burg am Geyer­bach tra­fen, zwi­schen den Schlös­sern Mat­zen, Neu­mat­zen, Licht­wehr und der Burg­ruine Kropfs­berg, unmit­tel­bar an der Diözes­an­grenze von Salz­burg und Inns­bruck, be­findet sich das über 500 Jah­re alte Stoffel­häusl. Knapp 45 Jah­re un­bewohnt, wurde es in den Jah­ren 2010/2011 originalgetreu re­no­viert und restauriert und zu neu­em Le­ben erweckt.
+Dort wo sich noch vor gut 200 Jahren die Grenzen von Tirol und Salzburg am Geyerbach trafen, zwischen den Schlössern Matzen, Neumatzen, Lichtwehr und der Burgruine Kropfsberg, unmittelbar an der Diözesangrenze von Salzburg und Innsbruck, befindet sich das über 500 Jahre alte Stoffelhäusl. Knapp 45 Jahre unbewohnt, wurde es in den Jahren 2010/2011 originalgetreu renoviert und restauriert und zu neuem Leben erweckt.
 
-Auf his­tori­schem Bo­den ist es heu­te als ge­schichtsträchtiges Ver­mächtnis des einstigen Bergbaus am Reit­her Kogel, der Schiffahrt am Inn, der wirt­schaftli­chen Be­deu­tung des Or­tes St. Gertrau­di mit dem ehe­mals größten Markt im Un­ter­inn­tal ei­ne Begegnungs­stät­te für Ge­schich­te, Kul­tur und Wirt­schaft.
+Auf historischem Boden ist es heute als geschichtsträchtiges Vermächtnis des einstigen Bergbaus am Reither Kogel, der Schiffahrt am Inn, der wirtschaftlichen Bedeutung des Ortes St. Gertraudi mit dem ehemals größten Markt im Unterinntal eine Begegnungsstätte für Geschichte, Kultur und Wirtschaft.
 
 <figure class="full">
   <div class="aspect-ratio-16-9">

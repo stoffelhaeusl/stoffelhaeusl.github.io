@@ -13,6 +13,8 @@ Bei Schlechtwetter eine Woche später am 7. August.
 
 **Info:** Tel. +43 5337 624 53 oder +43 676 82 82 82 19
 
-<a href="{{ site.baseurl }}/assets/2016/07/almrauschklang-2016.jpg">
-  <img class="alignleft" src="{{ site.baseurl }}/assets/2016/07/almrauschklang-2016.jpg" alt="">
-</a>
+<img
+  class='alignleft'
+  src='/assets/2016/07/almrauschklang-2016.jpg'
+  alt='Original Almrauschklang vor dem Stoffelhäusl'
+/>

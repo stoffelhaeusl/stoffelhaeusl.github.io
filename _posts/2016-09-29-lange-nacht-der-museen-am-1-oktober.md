@@ -6,9 +6,7 @@ date: 2016-09-29 18:41:59.000000000 +02:00
 ---
 **Für die einen sind sie Kitsch und Müll, für die anderen sind es kleine Schätze. Das Stoffelhäusl zeigt bei der heurigen „Langen Nacht der Museen“ Objekte, die nur auf den ersten Blick gewöhnlich und „verwerflich“ scheinen.**
 
-<a href="{{ site.baseurl }}/assets/2016/09/Krimskrams01.jpg">
-  <img class="alignleft" src="{{ site.baseurl }}/assets/2016/09/Krimskrams01.jpg" alt="">
-</a>
+<img class='alignleft' src='/assets/2016/09/Krimskrams01.jpg' alt=''>
 
 Seit Jahrzehnten sammelt Martin Reiter Gegenstände, die andere weghaben wollen, aber für ihn eine große Bedeutung haben. Sie sind banal, kurios, einzigartig oder von Seltenheitswert – für den Sammler, oder aber auch für das ganze Land. Manchmal zwar noch nicht heute, aber mit Sicherheit vielleicht schon morgen oder in der nächsten Generation. Hinter jedem Objekt versteckt sich eine Geschichte oder ein Gschichtl. Und in dieser Verbindung gibt es plötzlich eine ganz andere Sichtweise auf scheinbar „Alltägliches“ oder „Verwerfliches“.
 
