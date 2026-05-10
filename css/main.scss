@@ -11,13 +11,10 @@ $text-font: 'Quattrocento', serif;
 
 $black: #000;
 $darkgrey: color.adjust($black, $lightness: 10%);
-$white: #fff;
-$lightgrey: color.adjust($white, $lightness: -8%);
+$lightgrey: color.adjust(white, $lightness: -8%);
 
 $link-color: #0274f5;
 $footer-text: color.adjust($lightgrey, $lightness: -35%);
-
-$webkit-tap-highlight-color: #ef485c;
 
 @use 'mixins' as *;
 @use 'gallery';
@@ -81,7 +78,6 @@ a {
 
 h1 {
   font-size: 2em;
-  margin-top: 0.75em;
 }
 
 abbr[title] {
@@ -180,6 +176,7 @@ input {
   line-height: normal;
 }
 
+a.button,
 button,
 html input[type='button'],
 input[type='reset'],
@@ -187,9 +184,11 @@ input[type='submit'] {
   -webkit-appearance: none;
   cursor: pointer;
   background: $link-color;
-  color: $white;
+  color: white;
   border: 0;
   padding: 0.25em 0.5em;
+  border-radius: 0.1875em;
+  display: inline-block;
 }
 
 button[disabled],
@@ -236,8 +235,8 @@ html {
   -ms-text-size-adjust: 100%;
   height: 100%;
   background-color: #f22544;
-  background: $white url('{{ site.baseurl }}/img/karo.png') top center;
-  -webkit-tap-highlight-color: $webkit-tap-highlight-color;
+  background-position: top center;
+  background-image: url('/assets/karo.png');
   background-attachment: fixed;
 }
 
@@ -316,6 +315,8 @@ hgroup {
   font-size: 2.5em;
   color: $black;
 
+  margin: 2rem auto 1rem;
+
   @include tablet {
     font-size: 3em;
   }
@@ -339,7 +340,10 @@ hgroup {
   border-top: 1px solid $lightgrey;
   border-bottom: 1px solid $lightgrey;
   width: 100%;
-  padding: 0.5em 0;
+  padding: 0.5em 1em;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
   @extend %clearfix;
 
   ul {
@@ -377,7 +381,7 @@ hgroup {
         color: #222;
         padding: 0.4375em 0;
         font-size: 1em;
-        @include border-radius(0.1875em);
+        border-radius: 0.1875em;
         display: block;
         text-align: center;
         font-family: $headline-font;
@@ -423,7 +427,7 @@ hgroup {
   }
 
   @include desktop {
-    padding: 0.375em 0;
+    padding: 0.375em;
 
     ul {
       clear: left;
@@ -459,7 +463,63 @@ hgroup {
         a {
           width: auto;
           padding: 0.375em 0.75em;
-          @include border-radius(0.1875em);
+          border-radius: 0.1875em;
+        }
+      }
+    }
+  }
+}
+
+$menu-border-color: rgba(255, 255, 255, 0.2);
+
+.home {
+  .header {
+    color: white;
+
+    background-image: url(/assets/stoffelhaeusl.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+
+    @include tablet {
+      max-width: initial;
+    }
+  }
+
+  .branding {
+    color: white;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+  }
+
+  .menu {
+    backdrop-filter: blur(4px);
+    border-color: $menu-border-color;
+    border-style: solid;
+    border-left-width: 0;
+    border-right-width: 0;
+
+    @include tablet {
+      border-radius: 0.5em;
+      border-left-width: 1px;
+      border-right-width: 1px;
+    }
+
+    ul {
+      li {
+        border-color: $menu-border-color;
+
+        a {
+          color: black;
+          mix-blend-mode: lighten;
+          text-shadow: 0px 0px 2px white;
+          background-color: rgba(255, 255, 255, 0.6);
+          box-shadow: 0px 0px 1px white inset;
+        }
+
+        &.current {
+          a {
+            background-color: rgba(255, 255, 255, 0.9);
+          }
         }
       }
     }
@@ -472,21 +532,38 @@ hgroup {
   margin-top: 1em;
 }
 
-.container {
-  background: $white;
-  width: 86.875%;
+.header {
+  background-color: white;
   margin: 0 auto;
-  min-height: 100%;
-  border: none;
-  padding: 1.125em 3.125% 0.675em;
-  @include box-shadow(0 1px 4px rgba(40, 0, 0, 0.4));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-  @include desktop {
-    width: auto;
+  @include tablet {
     max-width: 940px;
-    margin: 0 auto;
-    border: none;
-    padding: 2em 1.25em 1em;
+  }
+
+  .content {
+    background-color: transparent;
+    font-size: 1.5em;
+    padding: 2em;
+    width: 100%;
+    text-align: right;
+    margin-left: auto;
+    margin-right: auto;
+    flex-grow: 1;
+    align-content: center;
+
+    h1 {
+      margin-top: 0;
+      margin-bottom: 1em;
+    }
+
+    .button {
+      color: black;
+      background-color: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(4px);
+    }
   }
 }
 
@@ -541,71 +618,25 @@ figure {
 }
 
 .content {
-  margin-top: 1.5em;
-  margin-bottom: 1em;
-
   @extend %clearfix;
-}
 
-.contact-form {
-  > div {
-    float: left;
-    clear: both;
-    padding: 0.2em;
-    max-width: 100%;
-    @include border-radius(0.0625em);
-
-    &:not(:last-child) {
-      margin-bottom: 0.8em;
-      background: $lightgrey;
-    }
-  }
-
-  .error {
-    color: #e00;
-    background: none;
-  }
-
-  label,
-  input,
-  textarea {
-    float: left;
-    clear: both;
-    width: 100%;
-    -webkit-appearance: none;
-    @include border-radius(0);
-  }
-
-  label {
-    padding: 0.15em 0;
-  }
-
-  .textarea {
-    width: 100%;
-  }
-
-  input:not([type='submit']),
-  textarea {
-    background: $white;
-    border: none;
-  }
-
-  @extend %clearfix;
-}
-
-.meta-sep {
-  color: $lightgrey;
-}
-
-.content {
+  background-color: white;
+  margin: 0 auto;
   font-size: 1em;
   line-height: 1.5em;
+  padding: 2em;
 
   h1 {
     font-size: 2em;
+    margin-top: 0;
+  }
+
+  @include tablet {
+    max-width: 940px;
   }
 
   @include desktop {
+    width: auto;
     font-size: 1.25em;
   }
 
@@ -648,7 +679,7 @@ figure {
 
 article,
 section {
-  @include hyphens;
+  hyphens: auto;
 
   .entry-meta {
     font-size: 0.75em;
@@ -666,8 +697,15 @@ section {
   .full,
   p,
   table {
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin: 0;
+
+    &:not(:first-child) {
+      margin-top: 1em;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 1em;
+    }
   }
 }
 

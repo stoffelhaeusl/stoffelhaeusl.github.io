@@ -4,19 +4,20 @@ $border-color: magenta !default;
 @use 'mixins' as *;
 
 footer {
-  margin-top: 2em;
+  background-color: white;
+  margin: 0 auto;
+  padding: 1em;
+  border-top: 1px solid $border-color;
+
+  @include tablet {
+    max-width: 940px;
+  }
 
   p {
+    width: 50%;
     margin: 0 auto;
-    padding-top: 1em;
-    padding-bottom: 1em;
     text-align: center;
     color: $text-color;
-    border-top: 1px solid $border-color;
-
-    @include tablet {
-      width: 50%;
-    }
   }
 
   .sep {

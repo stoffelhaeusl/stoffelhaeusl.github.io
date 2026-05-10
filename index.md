@@ -1,6 +1,6 @@
 ---
-layout: page
-title: Griaß di im Stoffelhäusl
+layout: homepage
+title: Griaß di im Stoffelhäusl!
 menu_title: Startseite
 ---
 <img class="alignright" src="/assets/startseite.jpg" alt="">
