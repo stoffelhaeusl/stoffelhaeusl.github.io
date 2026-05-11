@@ -10,7 +10,7 @@ date: 2014-06-03 21:20:53.000000000 +02:00
   alt="Aktfotografie Plakat"
 />
 
-Vom 6. bis 9. Juni findet im Stoffelhäusl in St. Gertraudi die
+Vom 6. bis 9. Juni findet im Stoffelhäusl in St. Gertraudi die
 Sonderausstellung „Nackte tatsachen“ statt. Gezeigt werden rund 200
 historische Aktfotografien aus der Zeit von 1845 bis 1925. Die Ausstellung
 wird am Freitag, 6. Juni, um 19 Uhr mit einer Lesung von Ludwig Dornauer –

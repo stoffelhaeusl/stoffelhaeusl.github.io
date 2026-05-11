@@ -16,7 +16,7 @@ date: 2013-05-05 17:13:43.000000000 +02:00
 
 **Prof. Dr. Norbert Hölzl präsentierte sein neues Buch im Stoffelhäusl**
 
-ST. GERTRAUDI (2013-05-03) – Im Stoffelhäusl in St. Gertraudi, wo sich früher
+ST. GERTRAUDI (2013-05-03) – Im Stoffelhäusl in St. Gertraudi, wo sich früher
 sozusagen im „Dreiländereck“ die Grenzen von Bayern, Salzburg und Tirol
 trafen, präsentierte Prof. Dr. Norbert Hölzl vor honorigen Gästen aus Tirol,
 München und Wien sein Taschenbuch „650 Jahre Tirol und Österreich“.

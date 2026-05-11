@@ -3,7 +3,7 @@ layout: post
 title: Intensiv-Malworkshop mit Briefmarkenkünstler  Prof. Hannes Margreiter im Stoffelhäusl
 date: 2014-07-03 18:15:09.000000000 +02:00
 ---
-ST. GERTRAUDI – „Jedes Kind ist ein Künstler. Das Problem ist nur, wie man ein
+ST. GERTRAUDI – „Jedes Kind ist ein Künstler. Das Problem ist nur, wie man ein
 Künstler bleibt, wenn man größer wird.“ Mit diesem Zitat von Pablo Picasso
 hält es auch Kunstmaler Prof. Hannes Margreiter. Der gebürtige Kundler zählt
 zu den international renommiertesten Briefmarkenkünstlern. Alleine die
@@ -18,7 +18,7 @@ BRD gestaltet, ebenso eine Sondermarke für „Governor Arnold Schwarzenegger“
 
 Vom 7. bis 11. Juli und 14. bis 18. Juli 2014 leitet Margreiter zum dritten
 Mal Acrylwochen in Tirol. Hannes Margreiter: „Unser Atelier wird wieder das
-über 530 Jahre alte Stoffelhäusl in St. Gertraudi, tausende Motive mit Burgen,
+über 530 Jahre alte Stoffelhäusl in St. Gertraudi, tausende Motive mit Burgen,
 Bergen, Wäldern, Bächen und Seen finden sich in der näheren Umgebung.“
 
 Unter der fachgerechten Anleitung des Kursleiters bieten Acrylfarben beste

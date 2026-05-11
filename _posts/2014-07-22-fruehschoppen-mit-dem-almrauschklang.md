@@ -8,7 +8,7 @@ date: 2014-07-22 01:11:10.000000000 +02:00
 Seit 37 Jahren zählt der „Original Almrauschklang“ mit seinem unvergleichigen
 Sound zu den fixen und nicht mehr wegzudenkenden Größen der volkstümlichen
 Szene. Am Sonntag, den 3. August 2014, um 11.00 Uhr spielen die beliebten fünf
-Vollblutmusikanten beim Stoffelhäusl in St. Gertraudi zum Frühschoppen mit
+Vollblutmusikanten beim Stoffelhäusl in St. Gertraudi zum Frühschoppen mit
 Tanz auf. Die Veranstaltung findet nur bei Schönwetter statt.
 
 Tischreservierung unter:

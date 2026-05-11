@@ -3,7 +3,7 @@ layout: post
 title: '„Krieg am Berg“ im Stoffelhäusl'
 date: 2015-09-23 14:22:58.000000000 +02:00
 ---
-**Lange Nacht der Museen macht auch heuer wieder Station in St. Gertraudi**
+**Lange Nacht der Museen macht auch heuer wieder Station in St. Gertraudi**
 
 <img
   class='alignleft'
@@ -12,7 +12,7 @@ date: 2015-09-23 14:22:58.000000000 +02:00
 />
 
 Das älteste noch erhaltene Knappenhaus vom Bergbau am Reither Kogel ist das
-„Stoffelhäusl“ in St. Gertraudi. Das 1483 erbaute, 1676 aufgestockte und 1729
+„Stoffelhäusl“ in St. Gertraudi. Das 1483 erbaute, 1676 aufgestockte und 1729
 letztmals erweiterte Holzhaus war in seiner über 500-jährigen Geschichte
 Faktorei, Krame, Bergschmiede, Krämerladen und sogar Versammlungsort der Zeugen
 Jehovas.

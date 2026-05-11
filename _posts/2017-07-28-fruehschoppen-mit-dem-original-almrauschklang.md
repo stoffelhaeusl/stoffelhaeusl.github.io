@@ -9,4 +9,4 @@ date: 2017-07-28 09:08:35.000000000 +01:00
   alt='Original Almrauschklang vor dem Stoffelhäusl'
 />
 
-Heuer sind es genau 40 Jahre, dass der „Original Almrauschklang“ mit seinem unverwechselbaren Sound das Publikum begeistert. Eine musikalische Reise durch diese vier Jahrzehnte Tiroler Musikgeschichte gibt es zu hören beim schon traditionellen Frühschoppen mit dem Original Almrauschklang, am Sonntag, den 30. Juli 2017, ab 11.00 Uhr, beim Stoffelhäusl in St. Gertraudi. Bei Schlechtwetter eine Woche später, am Sonntag, den 6. August 2017.
+Heuer sind es genau 40 Jahre, dass der „Original Almrauschklang“ mit seinem unverwechselbaren Sound das Publikum begeistert. Eine musikalische Reise durch diese vier Jahrzehnte Tiroler Musikgeschichte gibt es zu hören beim schon traditionellen Frühschoppen mit dem Original Almrauschklang, am Sonntag, den 30. Juli 2017, ab 11.00 Uhr, beim Stoffelhäusl in St. Gertraudi. Bei Schlechtwetter eine Woche später, am Sonntag, den 6. August 2017.

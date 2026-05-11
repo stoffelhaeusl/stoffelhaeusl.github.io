@@ -17,7 +17,7 @@ date: 2013-05-05 16:57:18.000000000 +02:00
 
 **Seeber: 25.000 Europäer sterben infolge von Antibiotikaresistenz**
 
-**ST. GERTRAUDI (2013-01-03) – Bei einem Neujahrstreffen mit ausgesuchten
+**ST. GERTRAUDI (2013-01-03) – Bei einem Neujahrstreffen mit ausgesuchten
 Tiroler Persönlichkeiten aus Wirtschaft, Medizin, Landwirtschaft, Kultur und
 Politik zeigte Europaparlamentarier Mag. Dr. Richard Seeber am Beispiel des
 Schlagwortes "Wasserprivatisierung" auf, wie EU-Entwürfe in der nationalen

@@ -49,4 +49,4 @@ Seit Jahrzehnten sammelt Martin Reiter Gegenstände, die andere weghaben wollen,
 
 **Zur Stärkung:** Gerstlssuppe, Schwarzplentenkuchen, Kräutertee vom eigenen Garten
 
-**Bus-Haltestelle:** Feuerwehrhaus St. Gertraudi
+**Bus-Haltestelle:** Feuerwehrhaus St. Gertraudi

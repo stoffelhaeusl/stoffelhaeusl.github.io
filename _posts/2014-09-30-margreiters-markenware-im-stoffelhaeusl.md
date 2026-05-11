@@ -8,7 +8,7 @@ date: 2014-09-30 17:18:29.000000000 +02:00
 
 <img class='alignleft' src='/assets/2014/09/Hoelzl_Norbert.jpg' alt=''>
 
-**ST. GERTRAUDI - Das älteste noch erhaltene Knappenhaus vom Bergbau am Reither Kogel, das „Stoffelhäusl“ in St. Gertraudi, lädt am Samstag, den 4. Oktober 2014, ab 18 Uhr, wieder zur „Langen Nacht der Museen“. Geboten wird diesmal eine Briefmarkenausstellung inkl. der Neuerscheinung von fünf Briefmarken sowie eine Lesung von Prof. Dr. Norbert Hölzl und Tiroler Schmankerl.**
+**ST. GERTRAUDI - Das älteste noch erhaltene Knappenhaus vom Bergbau am Reither Kogel, das „Stoffelhäusl“ in St. Gertraudi, lädt am Samstag, den 4. Oktober 2014, ab 18 Uhr, wieder zur „Langen Nacht der Museen“. Geboten wird diesmal eine Briefmarkenausstellung inkl. der Neuerscheinung von fünf Briefmarken sowie eine Lesung von Prof. Dr. Norbert Hölzl und Tiroler Schmankerl.**
 
 Die Briefmarken des Tiroler Künstlers Prof. Hannes Margreiter wurden bereits millionenfach in alle Welt verschickt. Seit den Anfängen seiner Tätigkeit für die Post im Jahr 1988 bis heute hat Margreiter rund 150 Briefmarken entworfen. Darunter auch die Arnold- Schwarzenegger-Sonderbriefmarke. Es war die am schnellsten ausverkaufte Auflage in der 150-jährigen Geschichte der Briefmarke.
 
@@ -20,4 +20,4 @@ Zur bisher größten Retrospektive des Künstlers in Tirol wird dieser eine neue
   
 Der bekannte frühere ORF-Filmer Prof. Dr. Norbert Hölzl liest und erzählt von den vielfältigen, aber meist unbekannten Beziehungen zwischen Tirol, Österreich und Brasilien. Dazu gibt es Tiroler Kost und jede Menge Unterhaltung. Beginn ist um 18 Uhr.
 
-Das „Stoffelhäusl“ in St. Gertraudi wurde 1483 erbaut, 1676 aufgestockt und 1729 letztmals erweitert. Das Holzhaus war in seiner über 500-jährigen Geschichte Faktorei, Krame, Bergschmiede, Krämerladen und sogar Versammlungsort der Zeugen Jehovas. Es wurde 2010/11 komplett renoviert und dient nun als Privatmuseum und kulturelle Begegnungsstätte.
+Das „Stoffelhäusl“ in St. Gertraudi wurde 1483 erbaut, 1676 aufgestockt und 1729 letztmals erweitert. Das Holzhaus war in seiner über 500-jährigen Geschichte Faktorei, Krame, Bergschmiede, Krämerladen und sogar Versammlungsort der Zeugen Jehovas. Es wurde 2010/11 komplett renoviert und dient nun als Privatmuseum und kulturelle Begegnungsstätte.

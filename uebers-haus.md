@@ -8,7 +8,7 @@ permalink: /uebers-haus
   <figcaption class="wp-caption-text">Das Stoffelhäusl auf einer Lithographie um 1840</figcaption>
 </figure>
 
-Das wohl älteste noch erhaltene Knappenhaus vom Bergbau am Reither Kogel ist das „Stoffelhäusl“ in St. Gertraudi.
+Das wohl älteste noch erhaltene Knappenhaus vom Bergbau am Reither Kogel ist das „Stoffelhäusl“ in St. Gertraudi.
 
 Das laut dendrochronologischem Gutachten von Dr. Klaus Pfeifer im Jahr 1482 erbaute, 1676 aufgestockte und 1729 abermals erweiterte Holzhaus gehörte einst dem Faktoramt Schwaz, einer Verwaltungseinheit des riesigen Bergbaugebietes zwischen Rattenberg und Schwaz. Der Geyerbach nebenan bildete die Grenze zwischen Tirol und Salzburg, der Inn die Grenze zu Bayern.
 
