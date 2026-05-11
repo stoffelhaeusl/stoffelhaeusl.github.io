@@ -3,7 +3,7 @@ layout: homepage
 title: Griaß di im Stoffelhäusl!
 menu_title: Startseite
 ---
-<img class="alignright" src="/assets/startseite.jpg" alt="">
+<img class='alignright' src='/assets/startseite.jpg' alt=''>
 
 Dort wo sich noch vor gut 200 Jahren die Grenzen von Tirol und Salzburg am Geyerbach trafen, zwischen den Schlössern Matzen, Neumatzen, Lichtwehr und der Burgruine Kropfsberg, unmittelbar an der Diözesangrenze von Salzburg und Innsbruck, befindet sich das über 500 Jahre alte Stoffelhäusl. Knapp 45 Jahre unbewohnt, wurde es in den Jahren 2010/2011 originalgetreu renoviert und restauriert und zu neuem Leben erweckt.
 

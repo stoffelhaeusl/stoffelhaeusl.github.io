@@ -1,5 +1,19 @@
 media: assets
 content:
+  - name: gallery
+    label: Gallery
+    type: file
+    path: _data/gallery.yml
+    fields:
+      - name: images
+        label: Images
+        type: object
+        fields:
+          - name: url
+            label: URL
+            type: string
+            required: true
+        list: true
   - name: posts
     label: Posts
     type: collection
@@ -54,12 +68,12 @@ content:
         label: Permalink Pattern
         type: string
         readonly: true
+      - name: header_pages
+        label: Header Pages
+        type: string
+        list: true
       - name: plugins
         label: Plugins
         type: string
         list: true
         readonly: true
-      - name: header_pages
-        label: Header Pages
-        type: string
-        list: true
