@@ -11,6 +11,6 @@ Auf historischem Boden ist es heute als geschichtsträchtiges Vermächtnis des e
 
 <figure class="full">
   <div class="aspect-ratio-16-9">
-    <iframe src="//player.vimeo.com/video/29436147?byline=0&amp;portrait=0&amp;color=ffffff" width="320" height="240"></iframe>
+    <iframe src="//player.vimeo.com/video/29436147?byline=0&amp;portrait=0&amp;color=ffffff" width="320" height="240" allow="fullscreen"></iframe>
   </div>
 </figure>
