@@ -1,6 +1,5 @@
 title: Das Stoffelhäusl
-baseurl: ''
-url: http://stoffelhaeusl.info
+url: https://stoffelhaeusl.info
 permalink: /neuigkeiten/:year/:month/:title
 
 header_pages:
@@ -11,7 +10,6 @@ header_pages:
   - kontakt.md
   - standort.md
 
-# Build settings
 markdown: kramdown
 sass:
   style: compressed

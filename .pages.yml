@@ -5,7 +5,7 @@ content:
     type: collection
     path: _posts
     view:
-      fields: [ cover, title ]
+      fields: [cover, title]
     fields:
       - name: layout
         type: string
@@ -36,7 +36,7 @@ content:
         label: Body
         type: rich-text
   - name: config
-    label: Jekyll config
+    label: Jekyll Configuration
     type: file
     path: _config.yml
     fields:
@@ -44,44 +44,22 @@ content:
         label: Title
         type: string
         required: true
-      - name: author
-        label: Author
-        type: object
-        fields:
-          - name: name
-            label: Name
-            type: string
-          - name: email
-            label: Email
-            type: string
-            pattern: "^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$"
       - name: description
         label: Description
         type: string
-      - name: theme
-        label: Theme
+      - name: url
+        label: URL
         type: string
+      - name: permalink
+        label: Permalink Pattern
+        type: string
+        readonly: true
       - name: plugins
         label: Plugins
         type: string
         list: true
+        readonly: true
       - name: header_pages
-        label: Header pages
+        label: Header Pages
         type: string
         list: true
-      - name: minima
-        label: Minima settings
-        description: Minima specific settings, which are only available from Minima 3.0 onward.
-        type: object
-        fields:
-          - name: skin
-            label: Skin
-            type: select
-            options: 
-              values: 
-                - classic
-                - dark
-                - auto
-                - solarized-light
-                - solarized-dark
-                - solarized
