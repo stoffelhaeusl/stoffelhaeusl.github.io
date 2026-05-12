@@ -202,7 +202,7 @@ html {
   height: 100%;
   background-color: white;
 
-  $diamond-size: 2em;
+  $diamond-size: 38px;
   $diamond-opacity: 0.4;
   background-image:
     repeating-linear-gradient(
@@ -226,7 +226,6 @@ html {
     $diamond-size $diamond-size;
   background-position: center, top;
   background-repeat: repeat, repeat;
-  background-attachment: initial, fixed;
 }
 
 body {
