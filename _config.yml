@@ -13,6 +13,8 @@ header_pages:
 markdown: kramdown
 sass:
   style: compressed
+  load_paths:
+    - node_modules/modern-normalize
 plugins:
   - jekyll-feed
 exclude:
